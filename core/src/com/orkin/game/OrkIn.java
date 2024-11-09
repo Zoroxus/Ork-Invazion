@@ -431,18 +431,18 @@ public class OrkIn extends ApplicationAdapter {
 			drawText(selectedTile.getUnite().getRangeWeapon().toString(), 64*25, 64*13);
 			drawText("Range  : "+selectedTile.getUnite().getRangeWeapon().getRange()/3, 64*25, 64*12);
 			drawText("A  : "+selectedTile.getUnite().getRangeWeapon().getA(), 64*25, 64*11);
-			drawText("CT : "+selectedTile.getUnite().getRangeWeapon().getCT(), 64*25, 64*10);
+			drawText("HIT : "+selectedTile.getUnite().getRangeWeapon().getHIT(), 64*25, 64*10);
 			drawText("S  : "+selectedTile.getUnite().getRangeWeapon().getS(), 64*25, 64*9);
 			drawText("AP  : "+selectedTile.getUnite().getRangeWeapon().getAP(), 64*25, 64*8);
 			textFont.draw(batch, "Range  : "+selectedTile.getUnite().getRangeWeapon().getRange()/3, 64*25+20, 12*64-22);
 			textFont.draw(batch, "A  : "+selectedTile.getUnite().getRangeWeapon().getA(), 64*25+20, 11*64-22);
-			textFont.draw(batch, "CT : "+selectedTile.getUnite().getRangeWeapon().getCT(), 64*25+20, 10*64-22);
+			textFont.draw(batch, "HIT : "+selectedTile.getUnite().getRangeWeapon().getHIT(), 64*25+20, 10*64-22);
 			textFont.draw(batch, "S  : "+selectedTile.getUnite().getRangeWeapon().getS(), 64*25+20, 9*64-22);
 			textFont.draw(batch, "AP  : "+selectedTile.getUnite().getRangeWeapon().getAP(), 64*25+20, 8*64-22);
 
 			drawText(selectedTile.getUnite().getMeleeWeapon().toString(), 64*25, 64*7);
 			drawText("A  : "+selectedTile.getUnite().getMeleeWeapon().getA(), 64*25, 64*6);
-			drawText("CT : "+selectedTile.getUnite().getMeleeWeapon().getCT(), 64*25, 64*5);
+			drawText("HIT : "+selectedTile.getUnite().getMeleeWeapon().getHIT(), 64*25, 64*5);
 			drawText("S  : "+selectedTile.getUnite().getMeleeWeapon().getS(), 64*25, 64*4);
 			drawText("AP  : "+selectedTile.getUnite().getMeleeWeapon().getAP(), 64*25, 64*3);
 		}

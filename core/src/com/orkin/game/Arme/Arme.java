@@ -10,7 +10,7 @@ import com.orkin.game.Map.tileData;
 public class Arme {
     protected int portee;       // Range
     protected String attack;    // A
-    protected int ct;           // CT
+    protected int hit;          // To Hit
     protected int strength;     // S
     protected int pa;           // AP
     protected String dmg;       // D
@@ -20,16 +20,16 @@ public class Arme {
     /**
      * @param portee
      * @param attack
-     * @param ct
+     * @param hit
      * @param strength
      * @param pa
      * @param dmg
      * @param ismelee
      */
-    protected Arme(int portee,String attack,int ct,int strength,int pa,String dmg,boolean ismelee){
+    protected Arme(int portee,String attack,int hit,int strength,int pa,String dmg,boolean ismelee){
         this.portee = portee;
         this.attack = attack;
-        this.ct = ct;
+        this.hit = hit;
         this.strength = strength;
         this.pa = pa;
         this.dmg = dmg;
@@ -49,8 +49,8 @@ public class Arme {
     protected boolean touche(){
         Dice des6 = new Dice();
         int resultatdes = des6.rollD6(1);
-        System.out.print(" [hit roll: CT "+this.ct+"+ | "+resultatdes);
-        if(resultatdes>=this.ct){
+        System.out.print(" [hit roll: HIT "+this.hit+"+ | "+resultatdes);
+        if(resultatdes>=this.hit){
             System.out.print(" = hit] ");
             return true;
         }else{
@@ -219,8 +219,8 @@ public class Arme {
     public String getA() {
         return this.attack;
     }
-    public int getCT() {
-        return this.ct;
+    public int getHIT() {
+        return this.hit;
     }
     public int getS() {
         return this.strength;
