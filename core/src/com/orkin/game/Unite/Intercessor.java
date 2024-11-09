@@ -5,7 +5,7 @@ import com.orkin.game.Arme.*;
 
 public class Intercessor extends Unite{
     public Intercessor() {
-        super(6,4,3,2,6,2,5,1,new Close_Combat_Weapons(),new Bolt_Rifle(), new Sprite(new Texture("SpaceMarineSprite.png")));
+        super(6,4,3,2,6,2,5,1,new Close_Combat_Weapons(),new Boltgun(), new Sprite(new Texture("SpaceMarineSprite.png")));
         this.knuckles = new Sprite(new Texture("knuckles_right.png"));
     }
 

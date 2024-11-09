@@ -7,9 +7,9 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
  * The Bolt Rifle class is designed to depict a long-range firearm, commonly used in the game.
  * It specifies the weapon's attributes such as range, accuracy, and damage, tailored for ranged combat.
  */
-public class Bolt_Rifle extends Arme {
+public class Boltgun extends Arme {
     
-    public Bolt_Rifle(){
+    public Boltgun(){
         super(24, "2", 3, 4, 1, "1", false);
         // Range    24" = 8 tiles
         // A        2
@@ -28,6 +28,6 @@ public class Bolt_Rifle extends Arme {
      */
     @Override
     public String toString(){
-        return "Bolt Rifle";
+        return "Bolgun";
     }
 }

@@ -5,7 +5,7 @@ import com.orkin.game.Arme.*;
 
 public class Deathmark extends Unite{
     public Deathmark() {
-        super(200,4,3,2,6,2,5,1,new Bolt_Rifle(),new Close_Combat_Weapons(), new Sprite(new Texture("marine.png")));
+        super(200,4,3,2,6,2,5,1,new Boltgun(),new Close_Combat_Weapons(), new Sprite(new Texture("marine.png")));
     }
 
     @Override
